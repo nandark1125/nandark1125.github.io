@@ -5,6 +5,11 @@
     /* text-align: center;/ */
 /*  */
 
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
 /* Tag Selector & element selector*/
 
 h1{
@@ -120,4 +125,132 @@ input[type="checkbox"]:disabled + label{
 #fName:read-only{
     background-color: green;
     color: white;
+}
+
+div:empty{
+    height: 20Px;
+    background-color: aqua;
+}
+
+ul li:last-child{
+    color: blue;
+}
+
+ul li:first-child{
+    color: blueviolet;
+}
+
+ul li:nth-child(4){
+    color: brown;
+}
+
+#marginone{
+    border: 1px solid black;
+    /* margin: 50px; */
+    /* T/R/B/L */
+    /* margin: 40px 0; */
+    /* T/B , L/R */
+    /* max-width: 100px 0 40; */
+    /* T , L/R , B */
+    margin: 100px 10px 0 40px;
+    /* t r b l */
+
+}
+
+#marginTwo{
+    margin-right: 100px;
+}
+
+
+.paddingOne{
+    border: 1px solid red;
+    padding: 100px;
+}
+
+.paddingTwo{
+    border: 5px solid black;
+    padding-top: 50px;
+}
+/* Border */
+.borderOne{
+    /* border: 5px dotted green; */
+    border-left: 30px solid red;
+}
+
+.borderTwo{
+    border-style: dashed dotted solid double;
+    border-color: green red;
+    border-width: 10px 5px;
+}
+
+.block{
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+    display: inline-block;
+}
+
+.blockTwo{
+    border: 1px solid black;
+    width: 300px;
+    height: 20px;
+    display:inline-block;
+}
+
+.Floatright{
+    width: 40%;
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.Floatleft{
+    width: 10%;
+    float: left;
+}
+
+/* grid */
+
+.girdone div{
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.girdone{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* grid-row-gap: 20px; */
+    /* grid-column-gap: 30px; */
+    grid-gap: 30px;
+    padding: 20px;
+
+}
+
+.girdtwo div ,.girdthree div {
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+
+
+.girdtwo,.girdthree{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+}
+
+.coloAdd{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+}
+
+.rowAdd{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
