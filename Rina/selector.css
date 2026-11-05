@@ -1,0 +1,74 @@
+/* 
+*{
+    color: red;
+    text-align: center;
+} */
+
+h1{
+    color: aquamarine;
+    text-align: center;
+    font-size: 50px;
+    font-style: oblique;
+    background-color: black;
+    width: 30%;
+    margin: auto;
+}
+
+a[title="google"]
+{
+    color: green;
+}
+
+a[title="viber"]
+{
+    background-color: aquamarine;
+}
+
+#para{
+    color:brown;
+    background-color:grey;
+    word-spacing: 10px;
+    text-indent: 20px;
+    font-style: italic;
+
+}
+
+.pclass{
+    color: blueviolet;
+    background-color: whitesmoke;
+    word-spacing: 40px;
+    letter-spacing: 10px;
+    
+}
+
+.sclass{
+    background-color: burlywood;
+    color: yellow;
+    text-transform: capitalize;
+}
+
+#desce a{
+    color: red;
+
+}
+
+#child >a{
+    color:red;
+}
+.one:link{
+
+    color:red;
+    background-color: yellow;
+
+}
+
+.one:hover{
+    color: green;
+}
+
+div:target{
+    color: aqua;
+    background-color: black;
+    word-spacing: 20px;
+    text-transform: capitalize;
+}

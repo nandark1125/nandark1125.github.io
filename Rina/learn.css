@@ -1,0 +1,21 @@
+*{
+    color: aqua;
+
+}
+
+h1{
+    text-align: center;
+}
+
+a[title="google"]
+{
+    color: blue;
+}
+
+.desc a{
+    color: brown;
+}
+
+.flo{
+    float: left;
+}

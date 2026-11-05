@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Blue Background */
+.login-container {
+    background-color: #1769e0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White Login Box */
+.login-box {
+    background-color: #f8f7f4;
+    width: 390px;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 28px;
+}
+
+/* Input Labels */
+form > label {
+    display: block;
+    font-size: 13px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Email and Password */
+form > input {
+    width: 100%;
+    height: 42px;
+    padding: 10px;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 13px;
+    margin-bottom: 22px;
+    outline: none;
+}
+
+form > input:focus {
+    border-color: #1769e0;
+}
+
+/* Remember Me and Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    font-size: 11px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #555;
+}
+
+.options a,
+.signup a {
+    color: #345c9c;
+    text-decoration: none;
+}
+
+/* Login Button */
+button {
+    width: 100%;
+    height: 42px;
+    background-color: #1769e0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1055bd;
+}
+
+/* Sign Up Text */
+.signup {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 22px;
+}
+
+/* Small Screen */
+@media (max-width: 450px) {
+    .login-box {
+        width: 90%;
+        padding: 30px 22px;
+    }
+}

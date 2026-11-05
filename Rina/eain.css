@@ -1,0 +1,28 @@
+.welcome {
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.pragraph{
+    background-color: beige;
+    text-indent: 50px;
+    font-size: medium;
+    width: 50%;
+    color: brown;
+    padding: 20px;
+    margin: 20px;
+}
+.pp{
+
+     background-color: beige;
+    text-indent: 50px;
+    font-size: medium;
+    width: 50%;
+    color: brown;
+    padding: 20px;
+    margin: auto;
+}
