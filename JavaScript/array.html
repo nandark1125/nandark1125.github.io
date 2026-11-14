@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Lessons</h1>
+    <script>
+        //array
+
+        let studentList = ['Rina','Nandar','Sai'];
+        console.log(studentList);
+        console.log(studentList.length);
+        console.log(studentList[2]);
+
+        //array.push()
+
+        studentList.push('Linn');
+        console.log(studentList);
+
+        //array.pop()
+        studentList.pop();
+        console.log(studentList);
+
+        //array.unshift()
+        studentList.unshift('Khaing');
+        console.log(studentList);
+
+        //array.shift()
+        studentList.shift();
+        console.log(studentList);
+        
+        let studentList1 = ['Nandar','Nanda','Rina','Linn','Khaing'];
+        console.log(studentList1);
+
+        
+
+        //studentList1.sort();
+        //console.log(studentList1);
+
+        //studentList1.reverse();
+       // console.log(studentList1);
+
+       studentList1.sort().reverse();
+       console.log(studentList1);
+
+       //array to string 
+       let studentList2 = studentList1.toString();
+       console.log(studentList2);
+
+       //string to array
+       let studentList3 = "rina,nandar,molly,linn";
+       let studentListArray = studentList3.split(',');
+       console.log(studentListArray);
+
+
+       let Array1 = [1,2,3,4];
+       let Array2 = [5,6,7,8];
+       let Array3 = [9,10,11,12];
+
+       let Array4 = Array1.concat(Array3);
+       console.log(Array4);
+
+       let Array5 = [...Array1,...Array2,...Array3,...Array4];
+       console.log(Array5);
+       
+       
+       
+       
+
+       
+
+
+        
+
+
+        
+        
+
+
+    </script>
+</body>
+</html>
