@@ -1,34 +1,542 @@
 *{
-    margin: 0;
+     margin: 0;
     padding: 0;
-    font-family: one;
+    font-family: coffee;
+    background-color: #dcc7aa;
+    
 }
 
-@font-face{
-    font-family: one;
-    src: url(../Fonts/static/PlayfairDisplay-Italic.ttf);
+html{
+    scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: coffee;
+    src: url(../Fonts/static/PlayfairDisplay-ExtraBold.ttf)
+}
 
+/*  start nav bar*/
+.nav_card{
+     box-shadow: 0 0 10px rgb(0,0,0,0.2);
 
-.navbar{
+}
+
+.nav_item{
+    float: right;
+    margin-top: 80px;
+    padding: 0 100px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    margin: 0 100px;
+}
+.nav_item a{
+    text-decoration: none;
+    border: 1px solid black;
+    color:#fff8e7;
+    background-color: #3e2723;
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.a_text:hover {
+    background-color: #fff8e7;
+    color: #3e2723;
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+.nav_img{
+    width: 250px;
+}
+
+/* end nav bar */
+
+/* start home */
+
+.home {
+    margin-top: 80px;
+    padding: 0 100px;
+    width: 80%;
+}
+
+.home_img {
+    float: right;
+    width: 50%;
+    height: 400px;
+}
+
+.text1{
+    margin-top: 30px;
+}
+
+.text2{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.text3{
+    margin-top: 20px;
+}
+
+.text4{
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.home_button{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3e2723;
+    color: #dcc7aa;
+}
+
+
+.home_button:hover {
+    background-color: #dcc7aa;
+    color: #3e2723;
+    transform: translateZ(-10px);
+    transition: 0.3s;
+}
+
+/* end home */
+
+/* start menu */
+
+.menu_card{
+    margin-top: 100px;
+    padding: 0 100px;
+    width: 80%;
+
+}
+
+.menu_title{
     align-items: center;
-
+    text-align: center;
 }
 
-.navbar_logo{
-    width: 100px;
-    height: 100px;
+.menu_hr{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #3e2723;
 }
 
-.navbar ul{
+.menu_h5{
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu_coffee{
+    float: right;
+    margin-right:20%;
+}
+
+.menu_coff{
+    margin-bottom: 10px;
+}
+
+.menu_coffee_photo{
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.menu_coffee_photo:hover{
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.menu_price{
     display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    align-items: center;
+    width: 350px;
+    letter-spacing: 2px;
 }
 
-.navbar ul li{
-    list-style: none;
-    margin-left: 50px;
+.menu_first{
+    margin-bottom: 80px;
+     margin: auto;
+    margin-top: 40px;
+    padding:20px 0 20px 50px;
 }
+
+/*  */
+
+.menu_tea_photo{
+    float: right;
+     width: 40%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.menu_tea_photo:hover{
+     filter: brightness(50%);
+    transition: 0.3s;
+
+}
+
+.menu_cakes_item{
+    margin-right: 20px;
+}
+
+.menu_cake{
+    margin-bottom: 40px;
+     margin: auto;
+    margin-top: 40px;
+    padding:80px 0 20px 50px;
+}
+
+.menu_snack{
+    margin: auto;
+    margin-top: 40px;
+    padding:80px 0 20px 50px;
+}
+
+/* end menu */
+
+/* start specialities */
+
+.special{
+    margin: auto;
+    margin-top: 150px;
+    width: 80%;
+}
+
+.special_hr{
+    width: 250px;
+    border: 1px solid #3e2723;
+    margin-top: 10px;
+}
+
+/* .combo_set{ */
+    /* border: 1px solid black; */
+/* } */
+
+.combo_card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.special_img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.special_img:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+    filter: brightness(50%);
+}
+
+.special_h2{
+    font-weight: bold;
+}
+
+.special_p{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.order_now{
+    display: inline-block;
+    background-color: #3e2723;
+    color: #dcc7aa;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.order_now:hover{
+    background-color: #dcc7aa;
+    color:#3e2723;
+}
+
+/* end specilities */
+
+/* start gallery */
+
+.gallery{
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+}
+
+.gallery_hr{
+    width: 400px;
+    border: 1px solid #3e2723;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery_cards{
+    height:300px;
+    overflow: hidden;
+}
+
+.gallery_card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_img:hover{
+     transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.picture_text{
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.picture_text:hover{
+    color: #dcc7aa;
+    background-color: #3e2723;
+}
+
+.book{
+    margin-top: 40px;
+}
+
+/* end gallery */
+
+/* start about */
+
+.about{
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+}
+
+.about_h3{
+    margin-top: 20px;
+}
+
+.about_hr{
+    border: 1px solid #3e2723;
+    margin-bottom: 10px;
+}
+
+.h3_hr{
+    width: 300px;
+    border: 1px solid #3e2723;
+    margin-top: 5px;
+}
+
+.mission_hr{
+    width: 100px;
+    border: 1px solid #3e2723;
+    margin-top: 5px;
+}
+
+.about_img{
+    float: right;
+    width: 50%;
+}
+
+.about_p{
+    margin-top: 20px;
+}
+
+.good{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.view_more{
+    text-decoration: none;
+    color: #3e2723;
+}
+
+.view_more:hover{
+    color: #c47b58;
+}
+
+.clear{
+    clear: both;
+}
+
+.last_hr{
+    margin-top: 20px;
+    border: 1px solid #3e2723;
+}
+
+/* end about */
+
+/* start footer */
+
+.footer{
+    padding: 50px 100px;
+    margin-top: 80px;
+   
+}
+
+.footer_logo{
+    width: 250px;
+    height: 150px;
+}
+
+.footer_cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_icon{
+    border: 1px solid black;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 5px;
+    border-radius: 10px;
+    color: #3e2723;
+}
+
+.footer_item{
+    text-decoration: none;
+    color: #3e2723;
+    display: block;
+    margin-top: 10px;
+}
+
+.footer_list{
+    list-style: none;
+}
+
+.footer_contact{
+    margin-top: 10px;
+    color: #3e2723;
+}
+
+.footer_hr{
+    margin-top: 20px;
+    border: 1px solid #3e2723;
+
+}
+
+.footer_p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* end footer */
+
+/* start contact */
+
+.contact{
+    width: 80%;
+    padding: 50px 100px;
+    margin-top: 80px;
+}
+
+.contact_hr{
+    width: 250px;
+    border: 1px solid #3e2723;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.contact_img{
+    float: right;
+    width: 50%;
+    align-items: center;
+}
+
+.last_hr1{
+    margin-top: 30px;
+    border: 1px solid #3e2723;
+}
+
+.last_p{
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* end contact */
+
+/* start culture */
+
+.culutre{
+    margin-top: 80px;
+    padding: 0 100px;
+    width: 80%;
+}
+
+.culture_head{
+    text-align: center;
+}
+
+.head_hr{
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    width: 150px;
+    align-items: center;
+    border: 1px solid #3e2723;
+}
+
+.culture_photo{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.culture_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.culture_img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.culutre_card{
+    padding: 30px;
+}
+
+.culture_h2{
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.culture_p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.end_culture{
+    border: 1px solid #3e2723;
+}
+
+/* end culture */
