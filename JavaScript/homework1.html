@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork</title>
+</head>
+<body>
+    <h1>HomeWork</h1>
+
+    <script>
+
+        let secretNo = 5;
+        let time = 0;
+        let userNo = Number(prompt("Enter a number between 1 to 10"));
+
+        while (secretNo != userNo) {
+            time++ ;
+            if (secretNo > userNo) {
+                alert("Lower! Please,Try Again");
+                
+            } else {
+                alert("Higher! Please,Try Again");
+            }
+            userNo = Number(prompt("Enter a number between 1 to 10"));
+
+             time++ ;
+
+        }
+        document.write(`<h3>Conguration! Your No is corrected.</h3>`)
+        document.write(`<h3>Your No is corrected in ${time} times.</h3>`)
+
+
+    </script>
+    
+</body>
+</html>

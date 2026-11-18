@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision</title>
+</head>
+<body>
+    <h1>Re_exercise</h1>
+
+    <script>
+
+        function sum(num1,num2) {
+            document.write(`<h3> ${num1} + ${num2}= ${num1+num2}</h3>`)
+            
+        }
+
+        sum(10,20);
+        sum(123,345);
+        sum(1245,8654);
+
+        function mult(num1=10,num2=50) {
+            document.write(`<h3>${num1}*${num2}=${num1*num2}</h3>`)
+            
+        }
+
+        mult();
+        mult(123,6432);
+
+        function sub(num1,num2) {
+            let result = num1 - num2;
+            return result;
+            
+        }
+        let data = sub(10-5)
+        if (data > 0) {
+            document.write(`<h3>I Love You</h3>`)
+            
+        }else{
+            document.write(`<h3>You love me</h3>`)
+        }
+
+    
+      
+        let secretNo = 7;
+        let time =0;
+        let userNo = Number(prompt("Enter a number between 1 to 10"));
+        while (secretNo != userNo) {
+            time++;
+            if (userNo < secretNo) {
+                alert("Lower! Try Again");
+                
+            } else{
+                alert("Higher! Try Again");
+            }
+            userNo = Number(prompt("Enter a number between 1 to 10"));
+             time++;
+            
+        }
+       
+
+        document.write("<h3>Correct Now</h3>")
+        document.write(`Your result in  ${time} is correct`);
+
+
+    </script>
+
+    
+</body>
+</html>
